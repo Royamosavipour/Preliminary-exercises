@@ -1,0 +1,282 @@
+html {
+  font-size: 65.5%;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.nav li{
+    font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(253, 252, 252);
+}
+.nav ul > * {
+  flex: 1;
+  text-align: right;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-between;
+}
+#forflex {
+  flex-grow: 2;
+  text-align: left;
+}
+#ul-part1 {
+  color: rgb(255, 255, 255);
+  margin-left: 2rem;
+  list-style-type: decimal;
+  font-size: 1.5rem;
+}
+.li-color::first-line {
+  color: rgb(251, 204, 101);
+}
+
+.li-color {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+/* .li-color{
+    list-style-type:decimal;
+    color: rgb(255, 255, 255);
+} */
+
+.partr1 {
+  background-color: rgb(75, 74, 74);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boxblack {
+  background: url(./pic/pic1.jpg) center/cover no-repeat;
+  width: 90%;
+  margin-top: 2rem;
+}
+#boxblack-text {
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin: 3rem;
+}
+.main {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+}
+#boxpic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#boxpic > * {
+  flex: 1;
+}
+#boxpic img {
+  max-width: 100%;
+}
+#boxpic1,
+#boxpic2,
+#boxpic3 {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border: 1px solid rgb(186, 186, 186);
+  margin: 1rem;
+  border-radius: 5px;
+}
+#Text-center {
+  font-size: 2rem;
+  padding: 2rem 0 0 2rem;
+}
+#titel {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+#seemor {
+  color: rgb(246, 215, 158);
+  margin: 0.5rem 0;
+}
+#tex1 {
+  color: orange;
+  font-size: 2rem;
+}
+#tex2 {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+#tex1,
+#tex2,
+#ul-part1 li {
+  margin: 1rem;
+}
+#nyky {
+  width: 90%;
+  color: white;
+  display: flex;
+  text-align: left;
+  padding: 2rem;
+}
+
+#nyky img,
+#tule img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+#tule {
+  display: inline;
+  width: 90%;
+  margin: 2rem;
+}
+#tule img {
+  float: left;
+  margin-right: 1rem;
+}
+#tule p {
+  color: white;
+}
+
+#contact {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+#pic-left {
+  margin-left: 1rem;
+  color: white;
+  float: right;
+}
+
+
+hr {
+  width: 90%;
+  color: rgb(196, 196, 254);
+  margin: 1rem;
+}
+.form1 {
+  display: flex;
+}
+#label1,
+#input1 {
+  display: flex;
+  flex-direction: column;
+}
+#label1 > * {
+  flex: 1;
+}
+#input1 {
+  padding-right: 2rem;
+}
+
+#label1 label,
+#input1 input {
+  margin: 0.5rem;
+  width: 100%;
+}
+#input1 {
+  flex-basis: 60%;
+}
+#label1 {
+  flex-basis: 40%;
+  color: white;
+}
+#button1 button {
+  margin: 1rem;
+  align-content: center;
+  background-color: orange;
+  border-radius: 3px;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+}
+#button1 {
+  display: flex;
+  justify-content: center;
+}
+.all-titel {
+  width: 90%;
+  color: orange;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+#footer {
+  color: white;
+  margin-bottom: 4rem;
+  display: flex;
+  width: 90%;
+  font-size: 2rem;
+}
+#lorem,
+#text-pic-right,
+#label1,
+#button1{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: red;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .nav ul li {
+    margin: 0.5rem;
+  }
+  #boxpic {
+    flex-direction: column;
+  }
+  #all-titel {
+    text-align: center;
+  }
+  #nyky {
+    flex-direction: column;
+  }
+  #nyky img,
+  #tule img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  #tule {
+    flex-direction: column;
+  }
+  #pic-left {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+ 
+
+  #boxpic{
+    flex-wrap: wrap;
+  }
+  #boxpic1,
+  #boxpic2{
+    flex: 1;
+  }
+  #boxpic3{
+    flex-basis: 100%;
+  }
+  #boxpic3 img{
+    width: 100%;
+  }
+  .nav ul > * {
+    flex: 1;
+   
+  }
+
+}

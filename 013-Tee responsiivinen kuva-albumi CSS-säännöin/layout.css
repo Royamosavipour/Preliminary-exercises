@@ -1,0 +1,21 @@
+html {
+  font-size: 65.5%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: fit-content;
+  height: 100%;
+  padding: 2rem;
+}
+
+.item img {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+}
+
+ol {
+  font-size: 1.6rem;
+}
+ol li {
+  margin-block-end: 1rem;
+  padding: 1rem;
+  border-radius: 0 0 2rem 0; /* oikea alakylma pyöräiletty  */
+}
+.parillinen li:nth-child(even) {
+  background-color: blanchedalmond;
+}
+
+.pariton li:nth-child(odd) {
+  background-color: blanchedalmond;
+}
+/*Muotoillaan sectionit rinnakkain flexin avulla */
+
+.parent {
+  display: flex;
+  flex-direction: row; /* motivaatio: lapset saadaan helposti rinnakain tai allekkain */
+  flex-wrap: wrap; /* motivaatio: lapset saadaan helposti rinnakain tai allekkain  */
+}
+.parent > * {
+  flex-grow: 1; /*lasten keskinainen leveys */
+  flex-basis: 0; /*lapsen minimileveys */
+}
+.parent .parillinen {
+  flex-grow: 2; /* täällä lapsella tuplaleveys */
+  margin-inline-end: 1rem;
+}

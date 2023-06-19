@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+body section,
+body aside {
+  flex-basis: 0;
+}
+body section {
+  flex-basis: 2;
+}
+
+header {
+  padding: 1rem;
+  background-color: red;
+  color: white;
+}
+nav {
+  padding: 1rem;
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+section {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: rgb(255, 221, 67);
+  color: white;
+}
+section > *{
+  flex-grow: 1;
+}
+article {
+  padding: 1rem;
+  background-color: rgb(58, 121, 13);
+  color: white;
+  margin-block-end: 1rem;
+}
+
+aside {
+  padding: 1rem;
+  background-color: rgb(0, 80, 201);
+  color: white;
+  
+}
+footer {
+  padding: 1rem;
+  background-color: rgb(128, 42, 214);
+  color: white;
+}
+
+.oikealle {
+  float: right;
+}
+
+.text-style{
+  width: 200px;
+height: 100px;
+align-items: center;
+
+}
+.section-1{
+  display: flex;
+  flex-direction: column;
+justify-content:space-between;
+align-items:center;
+}
+.color{
+  background-color: green;
+
+}
+p{
+  text-align: center;
+  padding: 1rem;
+
+}

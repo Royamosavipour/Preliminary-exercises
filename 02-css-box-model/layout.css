@@ -1,0 +1,111 @@
+/* mobile first (motoillaan htm-sivu ensin  mobili-näkymmää ja sitten mahdollisin muihin */
+
+html {
+  font-size: 62.5%; /*base font size : 62.5% x 16px =10px ; */
+}
+
+body {
+  margin: 1rem;
+  font-family: "Tilt Neon";
+  max-width: 1024px;
+}
+
+h1,
+h2,
+h3,
+p,
+pre,
+ul,
+section {
+}
+section {
+  background-color: #bbddee;
+  padding: 1rem;
+  border: solid black 2px;
+  margin-block-end: 1rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+pre {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+}
+ul {
+  font-size: 1.6rem;
+}
+
+.iso-kirjan {
+  float: left;
+  font-size: 500%;
+  width: 1.2em;
+  padding: 0.1em 0.1em 0;
+  color: white;
+  background-color: #324465;
+  text-align: center;
+  border: solid white 1px;
+  border-width: 0 0.2em 0.2em 0;
+  margin: -1rem 0.5em 0.2em -1rem;
+}
+
+#pikkukuva-vasen-ylanurkka {
+  display: block;
+  float: left;
+  margin: -1rem 2rem 2rem -1rem;
+  width: 9rem;
+}
+#pikkukuva-vasen-ylanurkka img {
+  max-width: 100%;
+}
+.banner1 {
+  margin-block-start: -11px;
+  margin-inline-start: -11px;
+  border: solid black 1px;
+  border-block-start: 0;
+  border-inline-start: 0;
+}
+
+#box3 h2 {
+  background-color: rgb(137, 170, 187);
+  padding: 2px;
+  text-align: right;
+  margin-inline-start: -1rem;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
+
+/* Tablet-ja suuremmat näkymät */
+
+@media only screen and (min-width: 426px) {
+  #box3 .banner1 {
+    background-color: white;
+    padding: 1rem;
+    width: 40rem;
+    float: left;
+    margin-inline-end: 2rem;
+    margin-block-end: 2rem;
+  }
+}
+
+#box2 h2 {
+  background-color: #89aabb;
+  padding: 1rem;
+  text-align: right;
+  margin-block-start: 1rem;
+  margin-inline-end: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
